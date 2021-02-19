@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import {ProductCatComponent} from './site/product-cat/product-cat.component';
+import { ProductCatComponent } from './site/product-cat/product-cat.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './site/nav/nav.component';
