@@ -54,12 +54,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -122,6 +122,14 @@
             "production": {
               "devServerTarget": "buntypatola:serve:production"
             }
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/buntypatola",
+            "netlifyToken": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCrQTVmgFU4FgBhxfkjMmnqfwSEPIPwuXX1hWk71WTOSJTnUDqxSKtAp1keInTBJM1NFY3J8ho+32LVpupXbQ4lj9ChR4CMdHk5q0SQxvsyCc1CVZ+B1jFQWG70n9ggpg453DaKb5VtRkx1suE4Ti406XPnb9paCXZvI47f+u1gbmroT4TSR16HNvX5gP+lxOqceGNI2jyVR9K+2Tb1gzWsYw60l8J0ISSkap7gfpEkw1tYznNKeBTCuZFB+JMzyUILTFKTp1i1DsKV27gL9jBUqrhHj2lOJo7Cq8RcFEg6BOEDu6NV23wmJebdDiuC2kpLwPTUDo3eNv+O4hE8I1X0pqX2lYuaIYPsYFrWDsjJc0muTq1i7SnxHvedLbCtFQFXNLx06IGdIPx9HTfE3YRGv5nTSA5vfiR7FVKRMvv3xH4dlbSCglFGDUXHuW9mY4BNd6qM4sed/nak4RvybZ1zmsSH918q9YmHV3Ymi5d5orvAFwpyJgDS7FLLbtUn0wYLRAQ7gV3goJq+lXSvtKRgTbSCQxx1FmItTq4ztztOA/g/gVXIV6KDl/QM6swZCGSmco8Mv6fng83X1H6q8o+y5aCm7YIF3MY+KrNGAVn1eni8zfvlssu6KaHi0Ia4BfNf1ejTcDwGWh5T718w6cqDQrvLhJrlaIYn/NpVA+stOQ==",
+            "siteId": "2b5556a8-62bb-4ac2-84f8-09c639d50a06"
           }
         }
       }

@@ -1,6 +1,6 @@
 [build]
-  publish = ""
-  command = "npm install"
+  publish = "dist/buntypatola"
+  command = "ng build --prod"
 [[redirects]]
   from = "/*"
   to = "/index.html"
