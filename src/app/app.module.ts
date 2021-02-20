@@ -10,6 +10,7 @@ import { HomePageComponent } from './site/home-page/home-page.component';
 import { AboutUsComponent} from './site/about-us/about-us.component';
 import { HistoryComponent } from './site/history/history.component';
 import { ProcessComponent } from './site/process/process.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ProcessComponent } from './site/process/process.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    IvyCarouselModule,
     RouterModule.forRoot([
       { path: '', component: HomePageComponent },
       { path: 'about-us', component: AboutUsComponent },

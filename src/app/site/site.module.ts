@@ -10,10 +10,9 @@ import { ProcessComponent } from './process/process.component';
 
 
 
+
 @NgModule({
   declarations: [NavComponent, FooterComponent, HomePageComponent, ProductCatComponent, AboutUsComponent, HistoryComponent, ProcessComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule]
 })
 export class SiteModule { }
