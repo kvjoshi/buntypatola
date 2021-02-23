@@ -10,7 +10,8 @@ import { HomePageComponent } from './site/home-page/home-page.component';
 import { AboutUsComponent} from './site/about-us/about-us.component';
 import { HistoryComponent } from './site/history/history.component';
 import { ProcessComponent } from './site/process/process.component';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { ProductDetailsComponent } from './site/product-details/product-details.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     AboutUsComponent,
     HistoryComponent,
     ProcessComponent,
-    ProductCatComponent
+    ProductCatComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
       { path: '', component: HomePageComponent },
       { path: 'about-us', component: AboutUsComponent },
       { path: 'history', component: HistoryComponent },
-      { path: 'process', component: ProcessComponent }
+      { path: 'process', component: ProcessComponent },
+      { path: 'product-detail', component: ProductDetailsComponent }
     ])
   ],
   providers: [],

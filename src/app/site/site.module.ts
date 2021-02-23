@@ -7,12 +7,13 @@ import { ProductCatComponent } from './product-cat/product-cat.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HistoryComponent } from './history/history.component';
 import { ProcessComponent } from './process/process.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 
 
 @NgModule({
-  declarations: [NavComponent, FooterComponent, HomePageComponent, ProductCatComponent, AboutUsComponent, HistoryComponent, ProcessComponent],
+  declarations: [NavComponent, FooterComponent, HomePageComponent, ProductCatComponent, AboutUsComponent, HistoryComponent, ProcessComponent, ProductDetailsComponent],
   imports: [CommonModule]
 })
 export class SiteModule { }
