@@ -12,6 +12,7 @@ import { HistoryComponent } from './site/history/history.component';
 import { ProcessComponent } from './site/process/process.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ProductDetailsComponent } from './site/product-details/product-details.component';
+import { ContactUsComponent} from './site/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ProductDetailsComponent } from './site/product-details/product-details.
     HistoryComponent,
     ProcessComponent,
     ProductCatComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,9 @@ import { ProductDetailsComponent } from './site/product-details/product-details.
       { path: 'about-us', component: AboutUsComponent },
       { path: 'history', component: HistoryComponent },
       { path: 'process', component: ProcessComponent },
-      { path: 'product-detail', component: ProductDetailsComponent }
+      { path: 'product-detail', component: ProductDetailsComponent },
+      { path: 'contact-us', component: ContactUsComponent }
+
     ])
   ],
   providers: [],
