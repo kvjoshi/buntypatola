@@ -14,6 +14,8 @@ import { ProcessComponent } from './site/process/process.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { ProductDetailsComponent } from './site/product-details/product-details.component';
 import { ContactUsComponent} from './site/contact-us/contact-us.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import { ContactUsComponent} from './site/contact-us/contact-us.component';
       { path: 'product-detail', component: ProductDetailsComponent },
       { path: 'contact-us', component: ContactUsComponent }
 
-    ])
+    ]),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

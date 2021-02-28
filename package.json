@@ -27,6 +27,7 @@
     "@angular/localize": "^11.2.2",
     "@angular/platform-browser": "~11.2.0",
     "@angular/platform-browser-dynamic": "~11.2.0",
+    "@angular/pwa": "^0.1102.2",
     "@angular/router": "~11.2.0",
     "@angular/service-worker": "^11.2.2",
     "@netlify-builder/deploy": "^3.2.0",
