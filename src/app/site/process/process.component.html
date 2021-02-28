@@ -1,125 +1,162 @@
-<div class="m-5 mx-auto p-16 sm:p-24 lg:p-4 bg-gray-200">    
-  <!-- Carousel Body -->
-  <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="max-height: 19rem;">
-    <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
-      <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://stripe.com/img/v3/payments/overview/photos/missguided.jpg" alt="">
-      <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div>
-      <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
-        <h2 class="text-2xl font-serif font-bold leading-7 text-white-900 sm:text-3xl sm:truncate">
-          Design Creation
-        </h2>
-      </div>
-    </div>
-    <div class="w-full md:w-5/5 flex items-center bg-gray-100 rounded-lg">
-      <div class="p-10 md:pr-10 md:pl-5 md:py-1 ">
-        <p class="text-gray-600" style="word-break: inherit; white-space: pre-line;">Warp and weft silk threads are tied separately with cotton thread on the portions already marked out in conformity with the proposed design in the fabric.
-          This tied portion is meant to remain unexposed to the colour while dyeing. 
+
+
+<div class="py-16">
+  <div class="container m-auto px-6">
+
+    <div class="lg:flex justify-between items-center">
+      <div class="lg:w-2/4 lg:p-0 p-7">
+        <h1 class="text-4xl font-bold leading-tight mb-5 capitalize">  Design Creation </h1>
+        <p class="text-base">  Warp and weft silk threads are tied separately with cotton thread on the portions already marked out in conformity with the proposed design in the fabric.
+          This tied portion is meant to remain unexposed to the colour while dyeing.
           United portion which has absorbed one colour, may be tied while dyeing in another colour.
           Typing tied separately with cotton thread on the portions already marked out in conformity with the proposed design in the fabric.
           This tied portion is meant to remain unexposed to the colour while dyeing.
           United portion which has absorbed one colour, may be tied while dyeing in another colour.
           Tyeing untying, retying and dyeing in different shades are the main features of this process.</p>
+
+
+
+      </div>
+      <div class="relative overflow-hidden shadow-2xl rounded-lg lg:w-1/3 group">
+        <vm-player>
+          <vm-video cross-origin="true" poster="assets/img/cover/cover-6.jpg">
+            <!-- These are passed directly to the underlying HTML5 `<video>` element. -->
+            <!-- Why `data-src`? Lazy loading, you can always use `src` if you prefer.  -->
+            <source data-src="https://www.youtube.com/watch?v=4IahvCIqeOc" type="video/mp4"/>
+          </vm-video>
+          <!-- We turn off the controls that come with the default UI. -->
+
+          <!-- We turn off the controls that come with the default UI. -->
+           <vm-default-ui [noControls]="true">
+            <vm-click-to-play> </vm-click-to-play>
+            <vm-poster></vm-poster>
+            <vm-scrim></vm-scrim>
+
+
+          </vm-default-ui>
+        </vm-player>
       </div>
     </div>
+
   </div>
 </div>
-<!-- Display Container (not part of component) 1 END -->
 
-<div class="m-5 mx-auto p-16 sm:p-24 lg:p-4 bg-gray-200">    
-  <!-- Carousel Body -->
-  <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="max-height: 19rem;">
-    <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
-      <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://stripe.com/img/v3/payments/overview/photos/missguided.jpg" alt="">
-      <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div>
-      <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
-      <h2 class="text-2xl font-serif font-bold leading-7 text-white-900 sm:text-3xl sm:truncate">
-        Dyeing Process
-      </h2>
+<div class="py-16">
+  <div class="container m-auto px-6">
+
+    <div class="lg:flex justify-between items-center">
+      <div class="relative overflow-hidden shadow-2xl rounded-lg lg:w-1/3 group">
+        <vm-player>
+          <vm-youtube cookies="true" video-id="DyTCOwB0DVw" poster="assets/img/cover/cover-7.jpg"></vm-youtube>
+          <!-- We turn off the controls that come with the default UI. -->
+          <vm-default-ui [noControls]="true">
+            <vm-click-to-play> </vm-click-to-play>
+            <vm-poster></vm-poster>
+            <vm-scrim></vm-scrim>
+
+
+          </vm-default-ui>
+        </vm-player>
       </div>
-    </div>
-    <div class="w-full md:w-5/5 flex items-center bg-gray-100 rounded-lg">
-      <div class="p-10 md:pr-10 md:pl-5 md:py-1 ">
-        <p class="text-gray-600" style="word-break: inherit; white-space: pre-line;">
-          After completion of dyeing work of warps and wefts, the threads of the warp of different repeats of a pattern are put together in a sequence on the loom, so that the design becomes visible. The threads of wefts are wound on to bobbins and kept in the bamboo shuttle for weaving process.
-      
+
+      <div class="lg:w-2/4 lg:p-0 p-7">
+        <h1 class="text-4xl font-bold leading-tight mb-5 capitalize"> Dyeing Process </h1>
+        <p class="text-base">  After completion of dyeing work of warps and wefts, the threads of the warp of different repeats of a pattern are put together in a sequence on the loom, so that the design becomes visible. The threads of wefts are wound on to bobbins and kept in the bamboo shuttle for weaving process.
         </p>
       </div>
+
     </div>
+
   </div>
 </div>
-<!-- Display Container (not part of component) 2 END -->
 
-<div class="m-5 mx-auto p-16 sm:p-24 lg:p-4 bg-gray-200">    
-  <!-- Carousel Body -->
-  <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="max-height: 19rem;">
-    <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
-      <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://stripe.com/img/v3/payments/overview/photos/missguided.jpg" alt="">
-      <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div>
-      <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
-      <h2 class="text-2xl font-serif font-bold leading-7 text-white-900 sm:text-3xl sm:truncate">
-        Traditional patola loom
-      </h2>
+<div class="py-16">
+  <div class="container m-auto px-6">
+
+    <div class="lg:flex justify-between items-center">
+      <div class="lg:w-2/4 lg:p-0 p-7">
+        <h1 class="text-4xl font-bold leading-tight mb-5 capitalize">  Traditional patola loom </h1>
+        <p class="text-base">  The patola is woven on a primitive hand operated harness loom made out of rosewood and bamboo strips. The loom lies at a slant, with the left side being lower than the right side. The bamboo shuttle is made to move to and fro through warp shades. Each weft thread is thoroughly examined and matched with each part of warp design pattern while weaving.
+        </p>
+
+
+
+      </div>
+      <div class="relative overflow-hidden shadow-2xl rounded-lg lg:w-1/3 group">
+        <vm-player>
+          <vm-youtube cookies="true" video-id="DyTCOwB0DVw" poster="assets/img/cover/cover-7.jpg"></vm-youtube>
+          <!-- We turn off the controls that come with the default UI. -->
+           <vm-default-ui [noControls]="true">
+            <vm-click-to-play> </vm-click-to-play>
+            <vm-poster></vm-poster>
+            <vm-scrim></vm-scrim>
+
+
+          </vm-default-ui>
+        </vm-player>
       </div>
     </div>
-    <div class="w-full md:w-5/5 flex items-center bg-gray-100 rounded-lg">
-      <div class="p-10 md:pr-10 md:pl-5 md:py-1 ">
-        <p class="text-gray-600" style="word-break: inherit; white-space: pre-line;">
-          The patola is woven on a primitive hand operated harness loom made out of rosewood and bamboo strips. The loom lies at a slant, with the left side being lower than the right side. The bamboo shuttle is made to move to and fro through warp shades. Each weft thread is thoroughly examined and matched with each part of warp design pattern while weaving.
-      
+
+  </div>
+</div>
+
+<div class="py-16">
+  <div class="container m-auto px-6">
+
+    <div class="lg:flex justify-between items-center">
+      <div class="relative overflow-hidden shadow-2xl rounded-lg lg:w-1/3 group">
+        <vm-player>
+          <vm-youtube cookies="true" video-id="DyTCOwB0DVw" poster="assets/img/cover/cover-7.jpg"></vm-youtube>
+          <!-- We turn off the controls that come with the default UI. -->
+           <vm-default-ui [noControls]="true">
+            <vm-click-to-play> </vm-click-to-play>
+            <vm-poster></vm-poster>
+            <vm-scrim></vm-scrim>
+
+
+          </vm-default-ui>
+        </vm-player>
+      </div>
+
+      <div class="lg:w-2/4 lg:p-0 p-7">
+        <h1 class="text-4xl font-bold leading-tight mb-5 capitalize">  Adjusting the design  </h1>
+        <p class="text-base"> The tension of the warp threads are removed by the help of needle after every time weaving of 8” to 10”  of fabric. Patola weaving is a highly accurate just a positioning of warp and weft of similar colour to obtain perfect design and harmony. The process is labour intensive, time consuming and requires high order of skill and dexterity.
         </p>
       </div>
+
     </div>
+
   </div>
 </div>
-<!-- Display Container (not part of component) 3 END -->
 
-<div class="m-5 mx-auto p-16 sm:p-24 lg:p-4 bg-gray-200">    
-  <!-- Carousel Body -->
-  <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="max-height: 19rem;">
-    <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
-      <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://stripe.com/img/v3/payments/overview/photos/missguided.jpg" alt="">
-      <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div>
-      <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
-      <h2 class="text-2xl font-serif font-bold leading-7 text-white-900 sm:text-3xl sm:truncate">
-        Adjusting the design
-      </h2>
+<div class="py-16">
+  <div class="container m-auto px-6">
+
+    <div class="lg:flex justify-between items-center">
+      <div class="lg:w-2/4 lg:p-0 p-7">
+        <h1 class="text-4xl font-bold leading-tight mb-5 capitalize">  Traditional patola </h1>
+        <p class="text-base">It takes three to four months to prepare tie-dyed design on warp and weft threads for one saree of 6 yards length by 48” width.
+          Two salvis(weavers) working together weave just about 8” to 9” a day. It takes 40 to 50 days to weave a sari.
+          Thus 4 to 5 persians take a period of 5 to 6 months to complete a saree depending on the design.</p>
+
+
+
+      </div>
+      <div class="relative overflow-hidden shadow-2xl rounded-lg lg:w-1/3 group">
+        <vm-player>
+            <vm-youtube cookies="true" video-id="DyTCOwB0DVw" poster="assets/img/cover/cover-7.jpg"></vm-youtube>
+            <!-- We turn off the controls that come with the default UI. -->
+             <vm-default-ui [noControls]="true">
+              <vm-click-to-play> </vm-click-to-play>
+              <vm-poster></vm-poster>
+              <vm-scrim></vm-scrim>
+
+
+            </vm-default-ui>
+          </vm-player>
       </div>
     </div>
-    <div class="w-full md:w-5/5 flex items-center bg-gray-100 rounded-lg">
-      <div class="p-10 md:pr-10 md:pl-5 md:py-1 ">
-        <p class="text-gray-600" style="word-break: inherit; white-space: pre-line;">
-          The tension of the warp threads are removed by the help of needle after every time weaving of 8” to 10”  of fabric. Patola weaving is a highly accurate just a positioning of warp and weft of similar colour to obtain perfect design and harmony. The process is labour intensive, time consuming and requires high order of skill and dexterity.
-      </p>
-      </div>
-    </div>
+
   </div>
 </div>
-<!-- Display Container (not part of component) 4 END -->
-
-<div class="m-5 mx-auto p-16 sm:p-24 lg:p-4 bg-gray-200">    
-  <!-- Carousel Body -->
-  <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl" style="max-height: 19rem;">
-    <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
-      <img class="absolute inset-0 w-full h-full object-cover object-center" src="https://stripe.com/img/v3/payments/overview/photos/missguided.jpg" alt="">
-      <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div>
-      <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
-      <h2 class="text-2xl font-serif font-bold leading-7 text-white-900 sm:text-3xl sm:truncate">
-        Traditional patola
-      </h2>
-      </div>
-    </div>
-    <div class="w-full md:w-5/5 flex items-center bg-gray-100 rounded-lg">
-      <div class="p-10 md:pr-10 md:pl-5 md:py-1 ">
-        <p class="text-gray-600" style="word-break: inherit; white-space: pre-line;">It takes three to four months to prepare tie-dyed design on warp and weft threads for one saree of 6 yards length by 48” width.
-           Two salvis(weavers) working together weave just about 8” to 9” a day. It takes 40 to 50 days to weave a sari. 
-          Thus 4 to 5 persians take a period of 5 to 6 months to complete a saree depending on the design.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Display Container (not part of component) 5 END -->
-
-
-
 

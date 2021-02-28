@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { VimeModule } from '@vime/angular';
 import { ProductCatComponent } from './site/product-cat/product-cat.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { ContactUsComponent} from './site/contact-us/contact-us.component';
     BrowserModule,
     AppRoutingModule,
     IvyCarouselModule,
+    VimeModule,
     RouterModule.forRoot([
       { path: '', component: HomePageComponent },
       { path: 'about-us', component: AboutUsComponent },
