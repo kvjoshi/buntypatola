@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
 import { VimeModule } from '@vime/angular';
 import { ProductCatComponent } from './site/product-cat/product-cat.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,10 @@ import { ProductDetailsComponent } from './site/product-details/product-details.
 import { ContactUsComponent} from './site/contact-us/contact-us.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AdminComponent } from './admin/admin.component';
+import { AdminRoutingModule } from './admin/admin.routing.component';
+import { SiteRoutingModule } from './site/site.routing.component';
+import { SiteComponent } from './site/site.component';
 
 
 @NgModule({
@@ -29,25 +34,26 @@ import { environment } from '../environments/environment';
     ProcessComponent,
     ProductCatComponent,
     ProductDetailsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AdminComponent,
+    SiteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IvyCarouselModule,
     VimeModule,
+    AdminRoutingModule,
+    SiteRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: HomePageComponent },
-      { path: 'about-us', component: AboutUsComponent },
-      { path: 'history', component: HistoryComponent },
-      { path: 'process', component: ProcessComponent },
-      { path: 'product-detail', component: ProductDetailsComponent },
-      { path: 'contact-us', component: ContactUsComponent }
+      { path: 'admin', component: AdminComponent },
+      { path: '', component: SiteComponent }
+
 
     ]),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
