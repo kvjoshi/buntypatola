@@ -21,6 +21,13 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminRoutingModule } from './admin/admin.routing.component';
 import { SiteRoutingModule } from './site/site.routing.component';
 import { SiteComponent } from './site/site.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { LoginComponent } from './admin/login/login.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
+import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+
+import { VideoComponent } from './admin/video/video.component';
 
 
 @NgModule({
@@ -36,7 +43,14 @@ import { SiteComponent } from './site/site.component';
     ProductDetailsComponent,
     ContactUsComponent,
     AdminComponent,
-    SiteComponent
+    SiteComponent,
+    SidebarComponent,
+    LoginComponent,
+    DashboardComponent,
+    AdminCategoryComponent,
+    AdminProductComponent,
+
+    VideoComponent
   ],
   imports: [
     BrowserModule,
