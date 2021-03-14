@@ -6,6 +6,7 @@ import {LoginComponent} from './login/login.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {AdminCategoryComponent} from './admin-category/admin-category.component';
 import {AdminProductComponent} from './admin-product/admin-product.component';
+import {VideoComponent} from './video/video.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,8 @@ const routes: Routes = [
       {path: '' , component: LoginComponent},
       {path: 'dashboard' , component: DashboardComponent},
       {path: 'category' , component: AdminCategoryComponent},
-      {path: 'products', component: AdminProductComponent}
+      {path: 'products', component: AdminProductComponent},
+      {path: 'video', component: VideoComponent}
     ]
 
   }
