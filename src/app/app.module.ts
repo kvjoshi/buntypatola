@@ -26,6 +26,7 @@ import { LoginComponent } from './admin/login/login.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { VideoComponent } from './admin/video/video.component';
 
@@ -59,6 +60,7 @@ import { VideoComponent } from './admin/video/video.component';
     VimeModule,
     AdminRoutingModule,
     SiteRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'admin', component: AdminComponent },
       { path: '', component: SiteComponent }
