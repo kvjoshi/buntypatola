@@ -29,6 +29,9 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
 import { HttpClientModule } from '@angular/common/http';
 
 import { VideoComponent } from './admin/video/video.component';
+import { AdminHeaderComponent } from './admin/admin-header/admin-header.component';
+import {DataTablesModule} from 'angular-datatables';
+import { TableCompComponent } from './admin/table-comp/table-comp.component';
 
 
 @NgModule({
@@ -51,7 +54,11 @@ import { VideoComponent } from './admin/video/video.component';
     AdminCategoryComponent,
     AdminProductComponent,
 
-    VideoComponent
+    VideoComponent,
+
+    AdminHeaderComponent,
+
+    TableCompComponent
   ],
   imports: [
     BrowserModule,
@@ -66,9 +73,10 @@ import { VideoComponent } from './admin/video/video.component';
       { path: '', component: SiteComponent }
 
 
-    ]),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
-  ],
+        ]),
+        ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+        DataTablesModule
+    ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
