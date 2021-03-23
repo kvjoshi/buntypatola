@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { PathLocationStrategy, LocationStrategy } from '@angular/common';
-import { VimeModule } from '@vime/angular';
 import { ProductCatComponent } from './site/product-cat/product-cat.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +31,7 @@ import { VideoComponent } from './admin/video/video.component';
 import { AdminHeaderComponent } from './admin/admin-header/admin-header.component';
 import {DataTablesModule} from 'angular-datatables';
 import { TableCompComponent } from './admin/table-comp/table-comp.component';
+import { SliderComponent } from './admin/slider/slider.component';
 
 
 @NgModule({
@@ -58,13 +58,14 @@ import { TableCompComponent } from './admin/table-comp/table-comp.component';
 
     AdminHeaderComponent,
 
-    TableCompComponent
+    TableCompComponent,
+
+    SliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IvyCarouselModule,
-    VimeModule,
     AdminRoutingModule,
     SiteRoutingModule,
     HttpClientModule,
