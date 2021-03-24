@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  showModal = false;
+  toggleModal(){
+    this.showModal = !this.showModal;
+  }
   constructor() { }
 
   ngOnInit(): void {

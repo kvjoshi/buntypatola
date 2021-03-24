@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-category.component.css']
 })
 export class AdminCategoryComponent implements OnInit {
-
+  showModal = false;
+  toggleModal(){
+    this.showModal = !this.showModal;
+  }
   constructor() { }
 
   ngOnInit(): void {

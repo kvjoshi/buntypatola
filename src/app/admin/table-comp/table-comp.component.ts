@@ -13,17 +13,17 @@ import { Subject } from 'rxjs';
 })
 export class TableCompComponent implements OnDestroy, OnInit {
 
- /* dtOptions: DataTables.Settings = {};
+  dtOptions: DataTables.Settings = {};
   // persons: Person[] = [];
 
   // We use this trigger because fetching the list of persons can be quite long,
   // thus we ensure the data is fetched before rendering
   dtTrigger: Subject<any> = new Subject<any>();
 
-  constructor(private httpClient: HttpClient) { }*/
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    /*     this.dtOptions = {
+         this.dtOptions = {
           pagingType: 'full_numbers',
           pageLength: 2
         };
@@ -32,11 +32,11 @@ export class TableCompComponent implements OnDestroy, OnInit {
             // this.persons = (data as any).data;
             // Calling the DT trigger to manually render the table
             this.dtTrigger.next();
-          });  */
+          });
   }
 
   ngOnDestroy(): void {
     // Do not forget to unsubscribe the event
-    /*this.dtTrigger.unsubscribe();*/
+    this.dtTrigger.unsubscribe();
   }
 }
