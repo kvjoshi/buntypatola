@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoComponent implements OnInit {
 type = 'Video';
+  showModal = false;
+  toggleModal(){
+    this.showModal = !this.showModal;
+  }
   constructor() { }
 
   ngOnInit(): void {
