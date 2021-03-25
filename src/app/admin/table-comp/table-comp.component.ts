@@ -102,6 +102,6 @@ export class TableCompComponent implements OnDestroy, OnInit {
 
   ngOnDestroy(): void {
     // Do not forget to unsubscribe the event
-    this.dtTrigger.unsubscribe();
+//     this.dtTrigger.unsubscribe();
   }
 }
