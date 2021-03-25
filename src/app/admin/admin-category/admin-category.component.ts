@@ -11,6 +11,7 @@ export class AdminCategoryComponent implements OnInit {
   toggleModal(){
     this.showModal = !this.showModal;
   }
+  type = 'Category';
   constructor() { }
 
   ngOnInit(): void {
