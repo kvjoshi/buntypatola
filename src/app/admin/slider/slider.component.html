@@ -57,13 +57,13 @@
       <div class="shadow-lg rounded-2xl bg-white dark:bg-gray-700 w-full p-6">
 
         <p class="font-bold text-md p-4 text-black dark:text-white">
-          My Tasks
+          {{type}}
           <span class="text-sm text-gray-500 dark:text-gray-300 dark:text-white ml-2">
                                             (05)
             </span>
         </p>
 
-        <app-table-comp>
+        <app-table-comp [whichTable]='this.type'>
 
         </app-table-comp>
 

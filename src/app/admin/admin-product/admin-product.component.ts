@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-product.component.css']
 })
 export class AdminProductComponent implements OnInit {
-
+type = 'Product';
   constructor() { }
 
   ngOnInit(): void {
