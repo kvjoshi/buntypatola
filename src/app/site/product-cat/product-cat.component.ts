@@ -23,6 +23,7 @@ getProductCat(): void{
   this.httpService.get('http://localhost/bunty/api/Product_Cat/read.php').subscribe(
     data => {
       this.ProductCatList = data as unknown as Map<string, object>;
+      console.log('Get Categories....' + JSON.stringify(this.ProductCatList));
       // tslint:disable-next-line: prefer-for-of
      /* for (let i = 0; i < this.ProductCatList.data.length; i++) {
         console.log('anyrhinh..' + this.ProductCatList.data[i].pc_name);

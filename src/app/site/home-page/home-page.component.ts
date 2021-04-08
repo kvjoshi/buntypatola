@@ -10,10 +10,10 @@ import { catchError, retry } from 'rxjs/operators';
 })
 
 export class HomePageComponent  {
-  public Sliders = {};
-  public Videos = {};
+  public Sliders :any ;
+  public Videos : any ;
   // tslint:disable-next-line: variable-name
-  public Product_Cat = {};
+  public Product_Cat : any ;
 
   // sample array for inycorousel
 images = [
@@ -26,7 +26,8 @@ images = [
     {path: './assets/img/cover/cover-7.jpg'}
   ];
 
-constructor(private httpService: HttpClient) { }
+
+  constructor(private httpService: HttpClient) { }
   // tslint:disable-next-line: use-lifecycle-interface
 ngOnInit(): void {
 
@@ -55,7 +56,7 @@ getSliders(): void {
 getProductCats(): void {
   this.httpService.get('http://localhost/bunty/api/Product_Cat/read.php').subscribe(
       data => {
-        this.Product_Cat = data as JSON;
+        this.Product_Cat =  data as unknown as Map<string, object>;
         console.log('Get Categories....' + JSON.stringify(this.Product_Cat));
       }
     );
